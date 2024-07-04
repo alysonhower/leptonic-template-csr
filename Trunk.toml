@@ -3,10 +3,12 @@ ignore = [
     # The Leptonic build writes these files. Not ignoring them could lead to infinite rebuilds when using `trunk serve`.
     "./public/js",
     # The Leptonic build writes these files. Not ignoring them could lead to infinite rebuilds when using `trunk serve`.
-    "./style/leptonic"
+    "./style/leptonic",
+    "./src-tauri",
 ]
 
 [serve]
-address = "127.0.0.1"
-port = 4001
+address = "0.0.0.0"
+port = 1420
 open = false
+ws_protocol = "ws"
